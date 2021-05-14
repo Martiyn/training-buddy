@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+
 class ExerciseInput extends Component {
     render() {
         const {item, handleChange, handleSubmit, editItem} = this.props  
@@ -10,7 +11,6 @@ class ExerciseInput extends Component {
                     <div className="input-group">
                         <div className="input-group-prepend">
                             <div className="input-group-text bg-info text-white">
-                                <i className="fas fa-book" />
                             </div>
                         </div>
 

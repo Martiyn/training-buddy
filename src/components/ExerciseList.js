@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import ExerciseItem from './ExerciseItem.js'
 
+
 class ExerciseList extends Component {
     render() {
         const {
@@ -44,7 +45,7 @@ class ExerciseList extends Component {
                             className="btn btn-info btn-block mt-1"
                             onClick={() => updateExercisesToShow("todo")}
                         >
-                            Exercise
+                            To be done
                         </button>
                     </div>
                 </div>

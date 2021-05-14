@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { v1 as uuid } from 'uuid'
+import { v4 as uuid } from 'uuid'
 import ExerciseInput from './components/ExerciseInput.js'
 import ExerciseList from './components/ExerciseList.js'
+import 'bootstrap/dist/css/bootstrap.css'
 
 class Trainer extends Component {
 	constructor(props) {
