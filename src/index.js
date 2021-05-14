@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Trainer from './App.js';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Trainer />
   </React.StrictMode>,
   document.getElementById('root')
 );
