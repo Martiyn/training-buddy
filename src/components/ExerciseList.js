@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component, Fragment } from 'react'
 import ExerciseItem from './ExerciseItem.js'
 
 class ExerciseList extends Component {

@@ -1,5 +1,5 @@
-import React from 'react'
-import uuid from 'uuid'
+import React, { Component } from 'react'
+import { v1 as uuid } from 'uuid'
 import ExerciseInput from './components/ExerciseInput.js'
 import ExerciseList from './components/ExerciseList.js'
 
