@@ -96,4 +96,15 @@ export default function Exercise(props) {
             </div>
         </div>
     );
+
+    useEffect(() => {
+        if(!wasEditing && isEditing) {
+            editFieldRef.current.focus();
+        }
+        if(wasEditing && !isEditing) {
+            editButtonRef.current.focus();
+        }
+    }, [wasEditing, isEditing]);
+
+    return <li className="exercise">{isEditing ? editingTemplate : viewTemplate}</li>;
 }
