@@ -18,10 +18,15 @@ export default function Exercise(props) {
     const wasEditing = usePrevious(isEditing);
 
     function handleChange(e) {
+       setNewName(e.target.value)
+        }
+
+    function handleSubmit(e) {
         e.preventDefault();
         if(!newName.trim()) {
             return;
         }
+
         props.editExercise(props.id, newName);
         setNewName("");
         setEditing(false);
