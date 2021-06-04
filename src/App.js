@@ -20,7 +20,7 @@ const FILTER_MAP = {
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
-function App(props) {
+export default function App(props) {
     const [exercises, setExercises] = useState(props.exercises);
     const [filter, setFilter] = useState('All');
 
@@ -71,5 +71,38 @@ const filterList = FILTER_NAMES.map(name => (
     />
 ));
 
+function addExercise(name) {
+    const newExercise = {id: "exercise-" + nanoid(), name: name, completed: false}
+    setExercises([...exercises, newExercise]);
+}
 
+const exercisesNoun = exerciseList.length !== 1 ? 'exercises' : 'exercise';
+const headingText = `${exerciseList.length} ${exercisesNoun} remaining`;
+const listHeadingRef = useRef(null);
+const prevExerciseLength = usePrevious(exercises.length);
+
+useEffect(() => {
+    if(exercises.length - prevExerciseLength === -1){
+        listHeadingRef.current.focus();
+    }
+}, [exercises.length, prevExerciseLength]);
+
+return (
+    <div className="exerciseapp stack-large">
+        <FormControl addExercise={addExercise}/>
+        <div className="filters btn-group stack-exception">
+            {filterList}
+        </div>
+        <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
+            {headingText}
+        </h2>
+        <ul
+        role="list"
+        className="exercise-list stack-large stack-exception"
+        aria-labelledby="list-heading"
+        >
+            {exerciseList}
+        </ul>
+    </div>
+ );
 }
