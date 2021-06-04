@@ -20,7 +20,7 @@ const FILTER_MAP = {
 
 const FILTER_NAMES = Object.keys(FILTER_MAP);
 
-export default function App(props) {
+export default function Trainer(props) {
     const [exercises, setExercises] = useState(props.exercises);
     const [filter, setFilter] = useState('All');
 
