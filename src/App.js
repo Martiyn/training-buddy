@@ -50,4 +50,26 @@ function editExercise(id, newName) {
     setExercises(editedExerciseList)
 }
 
+const exerciseList = exercises.filter(FILTER_MAP[filter]).map(exercise => (
+    <Exercise
+    id={exercise.id}
+    name={exercise.name}
+    completed={exercise.completed}
+    key={exercise.id}
+    toggleExerciseCompleted={toggleExerciseCompleted}
+    deleteExercise={deleteExercise}
+    editExercise={editExercise}
+    />
+));
+
+const filterList = FILTER_NAMES.map(name => (
+    <FilterButton
+    key={name}
+    name={name}
+    isPressed={name === filter}
+    setFilter={setFilter}
+    />
+));
+
+
 }
