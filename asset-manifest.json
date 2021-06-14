@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/training-buddy/static/css/main.b8f8c42d.chunk.css",
+    "main.js": "/training-buddy/static/js/main.7ad7f061.chunk.js",
+    "main.js.map": "/training-buddy/static/js/main.7ad7f061.chunk.js.map",
+    "runtime-main.js": "/training-buddy/static/js/runtime-main.c169b72a.js",
+    "runtime-main.js.map": "/training-buddy/static/js/runtime-main.c169b72a.js.map",
+    "static/js/2.8fc1491a.chunk.js": "/training-buddy/static/js/2.8fc1491a.chunk.js",
+    "static/js/2.8fc1491a.chunk.js.map": "/training-buddy/static/js/2.8fc1491a.chunk.js.map",
+    "index.html": "/training-buddy/index.html",
+    "static/css/main.b8f8c42d.chunk.css.map": "/training-buddy/static/css/main.b8f8c42d.chunk.css.map",
+    "static/js/2.8fc1491a.chunk.js.LICENSE.txt": "/training-buddy/static/js/2.8fc1491a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c169b72a.js",
+    "static/js/2.8fc1491a.chunk.js",
+    "static/css/main.b8f8c42d.chunk.css",
+    "static/js/main.7ad7f061.chunk.js"
+  ]
+}
