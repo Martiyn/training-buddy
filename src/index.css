@@ -5,7 +5,7 @@
 }
 
 *:focus{
-    outline: 3px dashed #228bec;
+    outline: 1px dashed #ffffff;
     outline-offset: 0;
 }
 
@@ -14,22 +14,24 @@ html {
 }
 
 h1, h2 {
-    margin-bottom: 0
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
 }
 
 ul {
     list-style: none;
     padding: 0;
+    color: rgb(255, 255, 255);
 }
 
 button {
     border: none;
-    margin: 0;
+    margin: 5px;
     padding: 0;
     width: auto;
     overflow: visible;
     background: transparent;
-    color: inherit;
+    color: rgb(255, 255, 255);
     line-height: normal;
 }
 
@@ -42,6 +44,7 @@ button, input, optgroup, select, textarea {
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
+    background-color: rgb(54, 95, 153);
 }
 
 button, input {
@@ -50,6 +53,7 @@ button, input {
 
 input[type="text"] {
     border-radius: 0;
+    background-color: rgb(236, 231, 231);;
 }
 
 body {
@@ -57,7 +61,7 @@ body {
     max-width: 68rem;
     margin: 0 auto;
     font: 1.6rem/1.25 Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #4d3d3d;
     color: #4d4d4d
 }
 
@@ -75,12 +79,13 @@ body {
 
 .btn.toggle-btn {
     border-width: 1px;
-    border-color: #d3d3d3
+    border-color: #000000
 }
 
 .btn.toggle-btn[aria-pressed="true"] {
     text-decoration: underline;
-    border-color: #4d4d4d
+    border-color: #000000;
+    border-width: 2px solid;
 }
 
 .btn__danger {
@@ -89,12 +94,12 @@ body {
 }
 
 .btn__filter {
-    border-color: lightgrey;
+    border-color: rgb(119, 4, 4);
 }
 
 .btn__primary {
     color: #fff;
-    background-color: #000;
+    background-color: rgb(14, 243, 7);
 }
 
 .btn-group {
@@ -111,7 +116,7 @@ body {
 }
 
 .label-wrapper {
-    margin: 0;
+    margin: 2px;
     flex: 0 0 100%;
     text-align: center;
 }
@@ -143,7 +148,7 @@ body {
   }
 
   .exerciseapp {
-      background: #fff;
+      background: rgb(19, 18, 18);
       margin: 2rem 0 4rem 0;
       padding: 1rem;
       position: relative;
@@ -295,4 +300,5 @@ body {
 
   .c-cb > input[type="checkbox"]:checked + label::after {
     opacity: 1;
+    color: rgb(3, 141, 3);
   }
