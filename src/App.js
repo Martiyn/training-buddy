@@ -49,7 +49,9 @@ function usePrevious(value) {
       setExercises(editedExerciseList);
     }
   
-    const exerciseList = exercises.filter(FILTER_MAP[filter]).map(exercise => (
+    const exerciseList = exercises
+    .filter(FILTER_MAP[filter])
+    .map(exercise => (
       <Exercise
         id={exercise.id}
         name={exercise.name}
